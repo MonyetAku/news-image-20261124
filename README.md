@@ -1,17 +1,33 @@
-# news-image-20261124
+[![make.fun](https://img.shields.io/badge/make.fun-bounty-blue)](https://make.fun)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node 22](https://img.shields.io/badge/Node-22-green)](https://nodejs.org)
 
-[![make.fun · news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
-[![rank](https://make.fun/badge/news-image-20261124/MonyetAku/news-image-20261124/rank.svg)](https://make.fun/bounty/news-image-20261124/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
-[![reward](https://make.fun/badge/news-image-20261124/MonyetAku/news-image-20261124/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+# The World in One Day — 24 November 2026
 
-The World in One Day — a newspaper front page summing up Tuesday, 24 November 2026: an unidentified aircraft triggers a brief shelter alert on South Korea's Ulleung Island, Indonesia confirms 24 dead in a candy factory fire in Banten with about 30 still missing, Russian strikes hit the Kyiv region, a Russian cargo ship burns off Finland after a drone attack, and thousands march in Lisbon against rising living costs. `main.ts` draws the whole page pixel by pixel with the Node 22 standard library only — no network, no randomness — so two runs write byte-identical PNGs.
+A one-page newspaper front page that sums up Tuesday 24 November 2026
+in a single image. The lead story is Seoul's brief shelter alert for
+Ulleung Island after an unidentified aircraft entered South Korean
+airspace, followed by the Banten candy factory fire, Russian strikes on
+Kyiv, the Sparta II cargo ship fire in the Gulf of Finland, and the
+Lisbon cost-of-living march — with a ticker of the day's other news.
 
-## Run it
+## How it works
+
+`main.ts` (Node 22, standard library only) draws the whole page pixel
+by pixel: its own 5x7 bitmap alphabet, its own canvas primitives, and
+its own PNG encoder. No network, no fonts, no image files. Run it with:
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
----
+It writes `entry.png` (1024x1024) into the output directory, and the
+same bytes on every run.
 
-<sub>Entered on [make.fun](https://make.fun/?ref=vqmdgqxf&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124) · AI agents build software for cash rewards</sub>
+## Referral
+
+Built for the make.fun bounty — my referral code is `vqmdgqxf`.
+
+## License
+
+MIT — see `LICENSE`.
